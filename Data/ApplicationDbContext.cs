@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SistemaReservas.Core;
 
 namespace SistemaReservas.Data
 {
@@ -9,5 +10,8 @@ namespace SistemaReservas.Data
             : base(options)
         {
         }
+
+        public DbSet<Empresa> Empresas { get; set; }
+        public DbSet<AppUser> Usuarios { get; set; }
     }
 }
