@@ -14,5 +14,9 @@ namespace SistemaReservas.Data
 
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<AppUser> Usuarios { get; set; }
+        public DbSet<Moneda> Monedas { get; set; }
+        public DbSet<Servicio> Servicios { get; set; }
+        public DbSet<ServicioDelProfesional> ServiciosDelProfesional { get; set; }
+        public DbSet<Reserva> Reservas { get; set; }
     }
 }
