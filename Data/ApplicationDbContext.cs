@@ -9,6 +9,7 @@ namespace SistemaReservas.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+
         }
 
         public DbSet<Empresa> Empresas { get; set; }
